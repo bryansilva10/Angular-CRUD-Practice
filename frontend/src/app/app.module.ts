@@ -12,10 +12,13 @@ import { NavComponent } from './components/template/nav/nav.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { ProductComponent } from './views/product/product.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [
@@ -34,7 +37,10 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 		MatToolbarModule,
 		MatSidenavModule,
 		MatListModule,
-		MatCardModule
+		MatCardModule,
+		MatButtonModule,
+		MatSnackBarModule,
+		HttpClientModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

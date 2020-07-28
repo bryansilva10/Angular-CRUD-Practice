@@ -1,19 +1,24 @@
 {
-	"products": [
-		{
-			"id": 1,
-			"name": "Macbook Black",
-			"price": 800.55
-		},
-		{
-			"id": 2,
-			"name": "PC Tower Red",
-			"price": 100.30
-		},
-		{
-			"id": 3,
-			"name": "Xiaomi Mi 9T",
-			"price": 300.55
-		}
-	]
+  "products": [
+    {
+      "id": 1,
+      "name": "Macbook Black",
+      "price": 800.55
+    },
+    {
+      "id": 2,
+      "name": "PC Tower Red",
+      "price": 100.3
+    },
+    {
+      "id": 3,
+      "name": "Xiaomi Mi 9T",
+      "price": 300.55
+    },
+    {
+      "name": "Test",
+      "price": 125.98,
+      "id": 4
+    }
+  ]
 }
