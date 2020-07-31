@@ -23,6 +23,32 @@ export class ProductService {
 
 	//method to create new prod
 	create(product: Product): Observable<Product> {
-		return this.http.post<Product>(this.baseUrl, product)
+		return this.http.post<Product>(this.baseUrl, product);
+	}
+
+	//method to read prods from server
+	read(): Observable<Product[]> {
+		return this.http.get<Product[]>(this.baseUrl);
+	}
+
+	//method to get specific product
+	readById(id: string): Observable<Product> {
+		//url
+		const url = `${this.baseUrl}/${id}`;
+		return this.http.get<Product>(url);
+	}
+
+	//method to update
+	update(product: Product): Observable<Product> {
+		//url
+		const url = `${this.baseUrl}/${product.id}`;
+		return this.http.put<Product>(url, product);
+	}
+
+	//delete 
+	delete(id: String): Observable<Product> {
+		//url
+		const url = `${this.baseUrl}/${id}`;
+		return this.http.delete<Product>(url);
 	}
 }
